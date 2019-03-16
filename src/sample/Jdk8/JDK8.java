@@ -117,7 +117,7 @@ public class JDK8 {
         String dayAfterTommorrow = "20190315";
         LocalDate formatted = LocalDate.parse(dayAfterTommorrow,
                 DateTimeFormatter.BASIC_ISO_DATE);
-        System.out.printf("Date generated from String %s is %s %n",
+        System.out.printf("Date generated from StringTest %s is %s %n",
                 dayAfterTommorrow, formatted);
 
         //在Java中使用自定义格式化工具解析日期
@@ -125,7 +125,7 @@ public class JDK8 {
         try {
             DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy.MM.dd");
             LocalDate holiday = LocalDate.parse(goodFriday, formatter);
-            System.out.printf("Successfully parsed String %s, date is %s%n", goodFriday, holiday);
+            System.out.printf("Successfully parsed StringTest %s, date is %s%n", goodFriday, holiday);
         } catch (DateTimeParseException ex) {
             System.out.printf("%s is not parsable!%n", goodFriday);
             ex.printStackTrace();
