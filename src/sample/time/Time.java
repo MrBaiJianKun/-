@@ -4,22 +4,29 @@ package sample.time;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.Scanner;
 
 
 public class Time {
     public static void main(String[] args) {
         //定义开始和停止的两时间
-        String startTime ="2019-3-17 6:45:00";
-        String stopTime ="2019-3-18 6:45:00";
+        Scanner scanner = new Scanner(System.in);
+        //输入第一个时间点
+        System.out.println("输入第一个时间点: ");
+        String time1 = scanner.nextLine();
+        //输入第二个时间点
+        System.out.println("输入第二个时间点: ");
+        String time2 = scanner.nextLine();
+        scanner.close();
         SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-ddHH:mm:ss");
         Date d1;
         Date d2;
         long diff =0;
         //通过SimpleDateFormat的对象吧String 类型的时间对象转化为Date类型的对象；
         try{
-            d1 = format.parse(startTime);
-
-            d2 =format.parse(stopTime);
+            d1 = format.parse(time1);
+            d2 = format.parse(time2);
+            diff = d1.getTime() - d2.getTime();
         } catch (ParseException e) {
             e.printStackTrace();
         }
