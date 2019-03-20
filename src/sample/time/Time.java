@@ -18,7 +18,7 @@ public class Time {
         System.out.println("输入第二个时间点: ");
         String time2 = scanner.nextLine();
         scanner.close();
-        SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-ddHH:mm:ss");
+        SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
         Date d1;
         Date d2;
         long diff =0;
