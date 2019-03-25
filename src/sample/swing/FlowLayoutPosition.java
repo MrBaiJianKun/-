@@ -26,6 +26,7 @@ class Poetry extends JFrame {
         Container c =getContentPane();
         setLayout( new FlowLayout(FlowLayout.CENTER,10,10));
         JLabel jLabel = new JLabel("以下哪一部小说非天蚕土豆所著？");
+
         JLabel jLabe2= new JLabel("A.《斗破苍穹》");
         JLabel jLabe3 = new JLabel("B.《武动乾坤》");
         JLabel jLabe4 = new JLabel("C.《元尊》");
