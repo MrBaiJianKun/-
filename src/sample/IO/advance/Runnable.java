@@ -1,4 +1,4 @@
-package advance;
+package sample.IO.advance;
 
 class RunnableTest extends Object implements Runnable {
     private int count = 10;

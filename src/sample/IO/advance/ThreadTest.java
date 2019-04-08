@@ -1,4 +1,4 @@
-package advance;
+package sample.IO.advance;
 
 public class ThreadTest extends Thread {
     private int count = 10;
