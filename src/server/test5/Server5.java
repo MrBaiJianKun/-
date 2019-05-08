@@ -31,6 +31,7 @@ class ServerThread4 implements Runnable{
             byte[] bytes = new byte[(int) file.length()];
             inputStream.read(bytes);
             OutputStream outputStream = socket.getOutputStream();
+
             inputStream.close();
             outputStream.close();
             socket.close();
